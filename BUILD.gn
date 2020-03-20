@@ -251,12 +251,12 @@ if (is_linux) {
 #
 
 # Set ENABLE_PRINTING=1 ENABLE_BASIC_PRINTING=1.
-assert(enable_basic_printing)
-assert(enable_print_preview)
-assert(!enable_service_discovery)
+# assert(enable_basic_printing)
+# assert(enable_print_preview)
+# assert(!enable_service_discovery)
 
 # Enable support for Widevine CDM.
-assert(enable_widevine)
+# assert(enable_widevine)
 
 if (is_clang) {
   # Don't use the chrome style plugin.
@@ -266,7 +266,7 @@ if (is_clang) {
 if (is_linux) {
   # Use system fontconfig. This avoids a startup hang on Ubuntu 16.04.4 (see
   # issue #2424).
-  assert(!use_bundled_fontconfig)
+#  assert(!use_bundled_fontconfig)
 }
 
 if (is_mac) {
