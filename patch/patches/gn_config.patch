@@ -131,7 +131,7 @@ index 6469473e6a79..f9f630bfe0df 100644
  
      input_locales = locales
 -    output_dir = "${invoker.output_dir}/locales"
-+    output_dir = "${invoker.output_dir}/chrome/locales"
++    output_dir = "${invoker.output_dir}/locales/chrome"
  
      if (is_mac) {
        output_locales = locales_as_mac_outputs
@@ -144,7 +144,7 @@ index bebec015f85d..cf4151a0f23e 100644
        "$chrome_dll_file",
        "$root_out_dir/chrome.exe",
 -      "$root_out_dir/locales/en-US.pak",
-+      "$root_out_dir/chrome/locales/en-US.pak",
++      "$root_out_dir/locales/chrome/en-US.pak",
        "$root_out_dir/setup.exe",
        "//chrome/tools/build/win/makecab.py",
        release_file,
